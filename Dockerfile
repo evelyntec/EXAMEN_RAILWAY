@@ -5,8 +5,8 @@ RUN mvn dependency:go-offline -B
 COPY src ./src
 RUN mvn clean package -DskipTests
 
-FROM tomcat:10.1-jdk17
-RUN rm -rf /usr/local/tomcat/webapps/ROOT
-COPY --from=build /app/target/pinturas.war /usr/local/tomcat/webapps/ROOT.war
+FROM eclipse-temurin:17-jdk
+WORKDIR /app
+COPY --from=build /app/target/pinturas.war app.war
 EXPOSE 8080
-CMD ["catalina.sh", "run"]
+ENTRYPOINT ["java", "-jar", "app.war"]
