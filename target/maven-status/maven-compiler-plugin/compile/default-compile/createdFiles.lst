@@ -1,0 +1,14 @@
+com\pinturas\repositorios\RepositorioCompra.class
+com\pinturas\repositorios\RepositorioUsuario.class
+com\pinturas\controladores\ControladorAutenticacion.class
+com\pinturas\modelos\Usuario.class
+com\pinturas\servicios\ServicioPintura.class
+com\pinturas\repositorios\RepositorioPintura.class
+com\pinturas\servicios\ServicioCompra.class
+com\pinturas\ServletInitializer.class
+com\pinturas\modelos\Pintura.class
+com\pinturas\PinturasApplication.class
+com\pinturas\modelos\Compra.class
+com\pinturas\configuracion\ConfiguracionSeguridad.class
+com\pinturas\controladores\ControladorPintura.class
+com\pinturas\servicios\ServicioUsuario.class
